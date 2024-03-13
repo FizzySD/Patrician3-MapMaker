@@ -133,11 +133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marzi\\source\\repos\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "projectUniqueName": "C:\\Users\\marzi\\Documents\\GitHub\\Patrician3-MapMaker\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
       "projectName": "WpfApp3",
-      "projectPath": "C:\\Users\\marzi\\source\\repos\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "projectPath": "C:\\Users\\marzi\\Documents\\GitHub\\Patrician3-MapMaker\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
       "packagesPath": "C:\\Users\\marzi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marzi\\source\\repos\\WpfApp3\\WpfApp3\\obj\\",
+      "outputPath": "C:\\Users\\marzi\\Documents\\GitHub\\Patrician3-MapMaker\\WpfApp3\\WpfApp3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marzi\\AppData\\Roaming\\NuGet\\NuGet.Config",

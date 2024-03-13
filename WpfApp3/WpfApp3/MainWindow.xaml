@@ -59,8 +59,8 @@
             <Label Content="Map Maker" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" Background="Transparent" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="16"/>
 
         </Grid>
-        <Border Grid.Row="0"  BorderThickness="1" Margin="0,10,0,10" CornerRadius="20" Background="#FF223A4A">
-            <Menu Background="{x:Null}" Grid.Row="0" Margin="0,0,0,0">
+        <Border Grid.Row="0"  BorderThickness="1" Margin="10,17,0,5" CornerRadius="20" Background="#FF223A4A">
+            <Menu Background="{x:Null}" Grid.Row="0" Margin="-1,0,0,0">
 
                 <MenuItem Header="File" FontSize="15" Foreground="White" Margin="20,12,40,0" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" >
                     <MenuItem Header="Open" FontSize="15" Foreground="#FF223A4A" HorizontalAlignment="Center" VerticalAlignment="Center" Click="MenuItem_Click_1"></MenuItem>
@@ -68,7 +68,7 @@
                 <MenuItem Header="Info"  FontSize="15" Margin="0,12,0,0" Foreground="White" HorizontalContentAlignment="Center"/>
             </Menu>
         </Border>
-        <Border CornerRadius="100"  Background="#FFEF4F4F" Margin="830,3,-14,53" MouseLeftButtonDown="Button_Click">
+        <Border CornerRadius="100"  Background="#FFEF4F4F" Margin="830,5,-14,51" MouseLeftButtonDown="Button_Click">
             <Button Content="X" FontSize="4" Background="{x:Null}" Click="Button_Click" BorderBrush="{x:Null}" Style="{StaticResource NoMouseOverButtonStyle}"/>
         </Border>
     </Grid>
