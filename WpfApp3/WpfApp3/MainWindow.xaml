@@ -68,7 +68,7 @@
                 <MenuItem Header="Info"  FontSize="15" Margin="0,12,0,0" Foreground="White" HorizontalContentAlignment="Center"/>
             </Menu>
         </Border>
-        <Border CornerRadius="100"  Background="#FFEF4F4F" Margin="830,5,-14,51" MouseLeftButtonDown="Button_Click">
+        <Border CornerRadius="100"  Background="#FFEF4F4F" Margin="827,5,-11,51" MouseLeftButtonDown="Button_Click">
             <Button Content="X" FontSize="4" Background="{x:Null}" Click="Button_Click" BorderBrush="{x:Null}" Style="{StaticResource NoMouseOverButtonStyle}"/>
         </Border>
     </Grid>

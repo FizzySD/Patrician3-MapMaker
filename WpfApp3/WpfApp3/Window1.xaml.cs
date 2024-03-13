@@ -22,11 +22,14 @@ namespace Main
     /// </summary>
     public partial class Window1 : Window
     {
+        private bool isDragging = false;
+        private Point lastMousePosition;
+
         bool canDraw = true;
         List<PathEllipse> pathEllipseList = new List<PathEllipse>();
         private Double zoomMax = 5;
         private Double zoomMin = 1;
-        private Double zoomSpeed = 0.001;
+        private Double zoomSpeed = 0.01;
         private Double zoom = 1;
         String _ImageSource;
         private Point startPoint;
@@ -183,10 +186,6 @@ namespace Main
                     }
                 }
             }
-        }
-        private void Canvas_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            //isDrawing = false;
         }
     }
 }

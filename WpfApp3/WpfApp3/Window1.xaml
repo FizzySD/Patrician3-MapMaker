@@ -8,7 +8,8 @@
         Title="Window1" Height="720" Width="1080"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        WindowStyle="None" Background="#FF1A2A35" MouseRightButtonDown="_Drag">
+        WindowStyle="None" Background="#FF1A2A35" MouseRightButtonDown="_Drag"
+        xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls;">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -32,9 +33,9 @@
             </Button>
             <Ellipse Fill="#FF0A1A40" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,-22,63"></Ellipse>
         </Grid>
-
-        <Grid Name="grigliaImmagine" Grid.Row="1"  Margin="260,0,0,0">
-            <Canvas Name="drawingCanvas" MouseLeftButtonDown="Canvas_MouseDown"  MouseLeftButtonUp="Canvas_MouseUp" MouseWheel="Canvas_MouseWheel" Panel.ZIndex="0">
+        <controls:InfiniteCanvas Name="canvas"/>
+        <Grid Name="grigliaImmagine" Grid.Row="1"  Margin="260,95,0,0">
+            <Canvas Name="drawingCanvas" MouseLeftButtonDown="Canvas_MouseDown" MouseWheel="Canvas_MouseWheel" Panel.ZIndex="0">
                 <Image Stretch="Fill" x:Name="image1" Height="472" Width="640" Source="/output.bmp"  />
                 <Canvas x:Name="preview" Panel.ZIndex="2" Height="472" Width="640">
                     
