@@ -1,0 +1,46 @@
+﻿<Window x:Class="Main.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Main"
+        mc:Ignorable="d"
+        Title="Window1" Height="720" Width="1080"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" Background="#FF1A2A35" MouseRightButtonDown="_Drag">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF354142">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Background="Transparent" Foreground="White" FontSize="20" BorderBrush="Transparent" Click="SaveCanvas">
+                <TextBlock Text="Click to Save"></TextBlock>
+            </Button>
+            <Button Grid.Column="1" Background="Transparent" Foreground="White" FontSize="20" BorderBrush="Transparent">
+                <TextBlock Text="Node Painter"></TextBlock>
+            </Button>
+            <Button Grid.Column="2" Background="Transparent" Foreground="White" FontSize="20" BorderBrush="Transparent">
+                <TextBlock Text="Node Linker"></TextBlock>
+            </Button>
+            <Ellipse Fill="#FF0A1A40" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,-22,63"></Ellipse>
+        </Grid>
+
+        <Grid Name="grigliaImmagine" Grid.Row="1"  Margin="260,0,0,0">
+            <Canvas Name="drawingCanvas" MouseLeftButtonDown="Canvas_MouseDown"  MouseLeftButtonUp="Canvas_MouseUp" MouseWheel="Canvas_MouseWheel" Panel.ZIndex="0">
+                <Image Stretch="Fill" x:Name="image1" Height="472" Width="640" Source="/output.bmp"  />
+                <Canvas x:Name="preview" Panel.ZIndex="2" Height="472" Width="640">
+                    
+                </Canvas>
+            </Canvas>
+        </Grid>
+    </Grid>
+
+</Window>
